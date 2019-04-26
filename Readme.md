@@ -46,45 +46,6 @@ added to the original pixels to create the final reconstructed image.
 
 (I shall upload the full documentation sometime soon.)
 
-### 3. Results
+### 3. Results for grid maps
 
-Inpainting on face images. **Row 1:** Real images before corruption. **Row 2:** Corrupted images. **Row 3:** Reconstructed images.
-
-![faces_completion](images/faces_completion.jpg)
-
-Inpainting on images from Chars74K dataset. **Row 1:** Real images before corruption. **Row 2:** Corrupted images. **Row 3:** Reconstructed images.
-
-![chars74k_completion](images/chars74k_completion.jpg)
-
-### 4. Try Yourself
-
-##### Setup and run:
-
-```bash
-pip3 install --user tensorflow
-
-git clone https://github.com/saikatbsk/ImageCompletion-DCGAN
-cd ImageCompletion-DCGAN
-
-# Train
-python3 main.py
-
-# Generate
-python3 main.py --nois_train --latest_ckpt 100000
-
-# Complete
-python3 main.py --is_complete --latest_ckpt 50000 --complete_src /path/to/images
-```
-
-##### Run on floydhub:
-
-```bash
-pip3 install --user floyd-cli
-~/.local/bin/floyd login
-
-git clone https://github.com/saikatbsk/ImageCompletion-DCGAN
-cd ImageCompletion-DCGAN
-
-~/.local/bin/floyd init ImageCompletion-DCGAN
-~/.local/bin/floyd run --gpu --env tensorflow-1.0 "python main.py --log_dir /output --images_dir /output"
-```
+to be continued
