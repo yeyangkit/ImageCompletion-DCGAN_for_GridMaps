@@ -1,0 +1,25 @@
+checkpoints
+tmp
+
+firstTestResDilatedFHrunsSELECTEDmini.tfrecords
+
+# Python:
+*.py[cod]
+*.so
+*.egg
+*.egg-info
+dist
+build
+
+# My configurations:
+db.ini
+deploy_key_rsa
+
+*.tfrecords
+
+/yy_data_repo
+/yy_data
+/data
+/images
+/complete
+
