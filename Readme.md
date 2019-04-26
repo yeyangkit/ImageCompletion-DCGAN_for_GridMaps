@@ -2,7 +2,6 @@
 
 Image inpainting refers to the task of filling up the missing or corrupted parts of an image. A context aware image inpainting method should be capable of suggesting new and relevant content for completing an image. This requires the system to have an understanding of the overall semantics of the image. This is where generative adversarial nets come into play.
 
-![completion](images/indian_celebs/completion.png)
 
 ### 1. Motivation
 
